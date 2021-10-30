@@ -17,7 +17,7 @@ ckeditor = CKEditor(app)
 Bootstrap(app)
 
 # CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///blog.db")  # sqlite for localhost
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "DATABASE_URL_BACKUP")  # use this for local host testing: "sqlite:///blog.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
