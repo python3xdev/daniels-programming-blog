@@ -91,8 +91,8 @@ class Comment(db.Model):
 
     text = db.Column(db.Text, nullable=False)
 
-# Line below only required once, when creating DB.
-db.create_all()
+
+db.create_all()  # You can leave this uncommented because the Heroku server needed this for the DB to work
 
 
 def admin_only(func):
